@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="styles.css">
@@ -7,76 +8,91 @@
 </head>
 
 <body>
-    <table cellspacing="15">
-        <tr>
-            <td> <img src="http://polytech.sfu-kras.ru/structure/FE/TTiGGD/vipusk/lisov.jpg" width="200"
-                    alt="мое фото" /></td>
-            <td>
-                <h1>Лысов Андрей</h1>
+    <div class="container">
+        <div class="info">
+            <img src="http://polytech.sfu-kras.ru/structure/FE/TTiGGD/vipusk/lisov.jpg" class="avatar" alt="мое фото" />
+            <div class="info-text">
+                <h1>Лысов Андрей Валерьевич</h1>
                 <p>Я являюсь WEB разработчиком</p>
                 <p><em>Я пока еще не опытный разработчик, но могу многое. <strong>Выбрав меня, вы не
                             пожалеете!</strong></em></p>
-            </td>
-        </tr>
+                <h4>Мои социальные сети</h4>
+                <a href="https://t.me/LysovAV" target="_blank">telegram</a>
+                |
+                <a href="#">VK</a>
+            </div>
+        </div>
+        <div class="card bg-yellow">
+            <h4>Мои хобби</h4>
+            <ol class="list">
+                <li>книги</li>
+                <li>мнемотехника</li>
+            </ol>
+        </div>
 
-    </table>
-    <hr />
-    <h2>Мои социальные сети</h2>
-    <ul>
-        <li><a href="https://t.me/LysovAV" target="_blank">telegram</a></li>
-        <li><a href="#"></a> instagramm</li>
-    </ul>
-    <hr />
-    <h2>Мои хобби</h2>
-    <ol type="I">
-        <li>книги</li>
-        <li>мнемотехника</li>
-    </ol>
-    <hr />
-    <h2>Опыт работы</h2>
-    <table cellspacing="10">
-        <thead>
-            <tr>
-                <th>Наименование организации</th>
-                <th>Должность</th>
-                <th>год</th>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Минпром</td>
-                <td>нач. отдела</td>
-                <td>2014-2024</td>
-            </tr>
-            <tr>
-                <td>Минпром</td>
-                <td>нач. отдела</td>
-                <td>2014-2024</td>
-            </tr>
-        </tbody>
-        <tfoot></tfoot>
-    </table>
-    <hr />
-    <ul>
-        <li><a href="index2.html">Я на GITHUB</a></li>
-    </ul>
-    <hr />
-    <h2>Связаться со мной</h2>
+        <div class="card bg-green">
+            <h2>Опыт работы</h2>
+            <table class="table">
+                <tr>
+                    <td>ООО "ИЦ Искра" (СПС Консультатнт плюс)</td>
+                    <td>Начальник отдела</td>
+                    <td>1995-2007</td>
+                </tr>
+                <tr>
+                    <td>ЗАО "Ридан"</td>
+                    <td>руководитель сервисного центра</td>
+                    <td>2007-2009</td>
+                </tr>
+                <tr>
+                    <td>ООО "Конвент"</td>
+                    <td>директор по проектам</td>
+                    <td>2010-2010</td>
+                </tr>
+                <tr>
+                    <td>Министерство промышленности, энергетики и жилищно-коммунального хозяйства Красноярского края
+                    </td>
+                    <td>Начальник отдела мониторинга систем жизнеобеспечения</td>
+                    <td>2010 по настоящее время</td>
+                </tr>
 
-    <form action="/">
-        <label for="name">ваше имя</label>
-        <input type="text" id="name" placeholder="Введите Ваше имя..." />
-        <br />
-        <br />
-        <label for="email">ваш email</label>
-        <input type="text" id="email" placeholder="Введите email..." />
-        <br />
-        <br />
-        <label for="text">Ваше сообщение:</label>
-        <textarea id="text" rows="2" cols="15"></textarea>
-        <br />
-        <br />
-        <input type="submit" value="Связаться" />
-    </form>
-</body>
+            </table>
+        </div>
 
+        <div class="card bg-red">
+            <h2>Мои работы на Гитхабе</h2>
+            <ul class="link-list">
+                <li><a href="https://andreylysow.github.io/HW-08/" target="_blank">Алгоритмы сортировки</a></li>
+                <li><a href="https://andreylysow.github.io/hw-06/" target="_blank">Генерация личности из JSON</a></li>
+                <li><a href="https://andreylysow.github.io/HW-04/" target="_blank">Задачи с использованием
+                        JavaScript</a></li>
+                <li><a href="https://andreylysow.github.io/HW-5/" target="_blank">Игра "Угадайка"</a></li>
+            </ul>
+        </div>
+
+        <div class="contact">
+            <h2>Связаться со мной</h2>
+            <form action="/">
+                <div class="row">
+                    <div class="form-group">
+                        <label for="name">ваше имя</label>
+                        <input type="text" id="name" placeholder="Введите Ваше имя..." />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">ваш email</label>
+                        <input type="text" id="email" placeholder="Введите email..." />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="text">Ваше сообщение:</label>
+                    <textarea id="text" rows="2" cols="15"></textarea>
+                </div>
+
+                <input class="btn" type="submit" value="Связаться" />
+            </form>
+        </div>
+            <div class="position">
+        <div class="box"></div>
+    </div>
+    </div>
 </html>
